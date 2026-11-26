@@ -45,15 +45,6 @@ startBtn.addEventListener('click', () => {
 
     // Запускаємо функцію updateTimer кожну 1000 мілісекунд (1 секунду)
     timerInterval = setInterval(updateTimer, 1000);
-// Подія при натисканні на кнопку "Старт" / "Продовжити"
-startBtn.addEventListener('click', () => {
-    // Перевірка, щоб не запустити кілька таймерів одночасно при повторно...
-    if (timerInterval !== null) return;
-
-    // Запускаємо функцію updateTimer кожну 1000 мілісекунд (1 секунду)
-    timerInterval = setInterval(updateTimer, 1000);
-
-    // Змінюємо стилі кнопок згідно з умовою
     stopBtn.style.opacity = '0.5';
     startBtn.style.opacity = '1';
 });
