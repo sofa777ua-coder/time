@@ -22,7 +22,6 @@ function updateTimer() {
   seconds++; // Збільшуємо секунди
 
   if (seconds === 60) {
-    if (seconds === 60) {
         seconds = 0;
         minutes++; // Якщо дійшли до 60 — скидаємо секунди і додаємо хвилину
 
